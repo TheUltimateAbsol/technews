@@ -1,0 +1,697 @@
+
+    <html>
+    <head>
+        <title>Reddit Hot Posts Report</title>
+        <style>
+            table { width: 100%%; border-collapse: collapse; }
+            th, td { border: 1px solid black; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+        </style>
+    </head>
+    <body>
+        <h2>Reddit Hot Posts from Last 24 Hours</h2>
+        <table>
+            <tr>
+                <th>Subreddit</th>
+                <th>Title</th>
+                <th>Score</th>
+                <th>URL</th>
+                <th>Comments Count</th>
+                <th>Posted UTC</th>
+                <th>Selftext</th>
+                <th>Comments</th>
+            </tr>
+    
+            <tr>
+                <td>hardware</td>
+                <td>Arc B580 Overhead Issue, Ryzen 5 3600, 5600, R7 5700X3D & R5 7600: CPU-Limited Testing</td>
+                <td>326</td>
+                <td><a href="https://youtu.be/00GmwHIJuJY?si=nxfsdfcS24t_TFkJ">https://youtu.be/00GmwHIJuJY?si=nxfsdfcS24t_TFkJ</a></td>
+                <td>380</td>
+                <td>2025-01-04 10:11:55</td>
+                <td></td>
+                <td><ul><li><b>Gigaguy777 (Score: 101):</b> The performance drop against itself on a higher-end CPU is already bad, but the 2600 and 3600 being especially hit hard is brutal. Given the $250 price tag and the cost of an upgrade to Zen 3 costing another $100ish if you get a budget one like a 5500, at that point you might as well just get a 4060 for $300 and save both time and money, and it only gets worse if you're paying above MSRP for the 580.</li><li><b>Rye42 (Score: 79):</b> Basically, Arc B580 is the best budget GPU for a high end PC build.</li><li><b>Snobby_Grifter (Score: 67):</b> Intel drivers use two threads for drawcall submissions, which is an ancient holdover from their igp. I remember having an intel laptop with a igp that couldn't benefit from the hyperthreading on an I3, no matter the resolution or gpu usage. 
+
+
+So you need a processor with 2 super fast cores, or you have to run up against the gpu limit and accept frametime dips.
+
+
+This is a software issue that probably won't be solved without some new hires, because it's been this way since the beginning.</li><li><b>_Kai (Score: 113):</b> For those asking about whether this issue is present on Intel, it does seem to be:
+
+- Intel 9600k, HardwareCanucks: https://youtu.be/npIpWFSfmv4
+
+- Intel 10700k, Wendell / level1techs: https://youtu.be/-M1bMzVzZF0?t=732</li><li><b>Firefox72 (Score: 253):</b> Oof at those 5600 results. 
+
+Thats the kind of platforms you would imagine the B580 would aim for.
+
+What good is a budget GPU for budget platforms if the budget GPU doesn't work well on those budget platforms.</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>hardware</td>
+                <td>Can GPU ray tracing be used for gameplay mechanics instead of visuals?</td>
+                <td>22</td>
+                <td><a href="https://www.reddit.com/r/hardware/comments/1htq7fn/can_gpu_ray_tracing_be_used_for_gameplay/">https://www.reddit.com/r/hardware/comments/1htq7fn/can_gpu_ray_tracing_be_used_for_gameplay/</a></td>
+                <td>24</td>
+                <td>2025-01-04 22:26:17</td>
+                <td>***EDIT:*** *It's been pointed out that I am probably confusing Ray Casts with Ray Tracing. I've been out of video game dev for over 10 years so my terminology and understanding are lacking. :) I appreciate the replies helping me understand this.*
+
+Anyone know if a current gen GPU can supply the system with gameplay ray tracing operations outside of just adding visual effects?
+
+A few years ago I was a systems designer for a game that we had to be very careful about using RT calls for our gamepla</td>
+                <td><ul><li><b>K1mbler (Score: 32):</b> I think you might be getting confused with ray casts, that are commonly used for checking collision bounds or for gameplay markup like cover positions etc.  They are typically rendered in debug mode but don’t require per frame updates.</li><li><b>yeshitsbond (Score: 20):</b> Apparently it can be used for Audio in returnal
+
+https://www.youtube.com/watch?v=JQ8shURt5XE</li><li><b>SignalButterscotch73 (Score: 5):</b> The architecture might be designed with RT operations in mind but if you have a process that can use the same hardware pathway that isn't raytracing then I see no reason why you can't use the hardware for it.
+
+I don't remember the quote but someone said something along the lines of hardware is fixed but software can do whatever it likes with that hardware.</li><li><b>Dghelneshi (Score: 3):</b> If you need *at least* thousands of ray casts at a time, they're all against triangle meshes and you are either tracing against the render meshes already on the GPU or have extra memory budget to store the extra meshes you need plus BVHs, you don't mind the results being delayed by one or two frames and the rays are at least somewhat coherent, then yes. Typically none of these are true for gameplay-related ray casts. This is basically the same reason why GPU-based physics are almost exclusively used for fluff that can potentially even be turned off without affecting gameplay, with only few exceptions like Claybook or slower large scale stuff like an ocean simulation.</li><li><b>spartan6500 (Score: 1):</b> I wrote up a small essay explaining how to use rt cores for other kinds of calculations and realized you meant ray casts :( Regardless, yes you could use ray casts for all sorts of fun things. A simple example is some simple group behaviors, look up “Boids”, most of the behaviors for those can be built on top of ray casting. Beyond that, you might have to get real creative with using ray casts for things that aren’t just collisions, frankly I can’t think of any. Also, using ray tracing cores for lots of ray cast might be useful since the math is basically the same—I think anyway, don’t cite me there. Good luck with whatever it is your building</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>hardware</td>
+                <td>[Rossmann Repair] SanDisk Extreme Portable SSD data recovery - "The worst SSD ever made." [39m28s]</td>
+                <td>4</td>
+                <td><a href="https://www.youtube.com/watch?v=Z3QKO11kCcc">https://www.youtube.com/watch?v=Z3QKO11kCcc</a></td>
+                <td>10</td>
+                <td>2025-01-05 02:07:42</td>
+                <td></td>
+                <td><ul><li><b>stefanels (Score: 3):</b> I had [THIS](https://shop.sandisk.com/products/usb-flash-drives/sandisk-ultra-fit-usb-3-1?sku=SDCZ430-256G-G46) model of USB drive and broke after 3 months of light use (maybe used 10 times)</li><li><b>wickedplayer494 (Score: 5):</b> Even if you don't watch the whole video, [do read Rossmann's pinned comment](https://www.youtube.com/watch?v=Z3QKO11kCcc&lc=Ugz5f5OoaI2zXfv9zrx4AaABAg) about mainstream outlets that have a propensity to love promoting this particular SSD despite the multiple ongoing proposed class-actions against the former combined Western Digital and SanDisk entity over this model, prior to WD divesting itself of SanDisk.</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>hardware</td>
+                <td>This Year, RISC-V Laptops Really Arrive</td>
+                <td>61</td>
+                <td><a href="https://spectrum.ieee.org/risc-v-laptops">https://spectrum.ieee.org/risc-v-laptops</a></td>
+                <td>55</td>
+                <td>2025-01-04 10:59:21</td>
+                <td></td>
+                <td><ul><li><b>3G6A5W338E (Score: 24):</b> >performance similar to Cortex-A76
+
+This discards the EIC7700(X) SoC, as the P570 in these is similar to Cortex-A73 in performance.
+
+Thus it must be a previously not announced SoC.</li><li><b>yabucek (Score: 80):</b> And this year is the year of the Linux desktop. It was also last year and the year before that, but this one is for real guys.</li><li><b>Frexxia (Score: 23):</b> Exciting developments for sure, but RISC-V devices that actual consumers will want to use are years away at best.</li><li><b>HorrorBuff2769 (Score: 2):</b> “This is the year”. Must be written by a cowboys fan</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>hardware</td>
+                <td>Game-Changing Tech at the Supercomputing 2024</td>
+                <td>2</td>
+                <td><a href="https://youtu.be/a45WLhhjYAk?si=_YbhHc5ZpaGg4OYu">https://youtu.be/a45WLhhjYAk?si=_YbhHc5ZpaGg4OYu</a></td>
+                <td>1</td>
+                <td>2025-01-04 20:27:02</td>
+                <td></td>
+                <td><ul><li><b>Sopel97 (Score: 1):</b> https://www.reddit.com/r/hardware/comments/1hjw152/best_tech_finds_at_supercomputing_2024/</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>nintendoswitch2</td>
+                <td>Opinions on my logo idea?</td>
+                <td>762</td>
+                <td><a href="https://i.redd.it/qxeufkqct0be1.jpeg">https://i.redd.it/qxeufkqct0be1.jpeg</a></td>
+                <td>84</td>
+                <td>2025-01-04 18:31:30</td>
+                <td></td>
+                <td><ul><li><b>Illustrious-Main2301 (Score: 66):</b> Too short!!!!</li><li><b>Ugly_Mario (Score: 40):</b> https://preview.redd.it/91hil3tuu0be1.jpeg?width=1848&format=pjpg&auto=webp&s=a9dc2003b2f91eaaf46ae9583da207510c1f1c1c</li><li><b>Amadeusdark (Score: 28):</b> Without "& Knuckles"  and "64" that logo is incomplete</li><li><b>Azadom (Score: 11):</b> New SUPER ADVANCED 3DSWITCH U SP NINTENDO ENTERTAINMENT SYSTEM</li><li><b>General-Ad-1047 (Score: 14):</b> Fucking amazing</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>nintendoswitch2</td>
+                <td>ZA Themed Switch 2 Concept I made</td>
+                <td>370</td>
+                <td><a href="https://www.reddit.com/gallery/1htnsch">https://www.reddit.com/gallery/1htnsch</a></td>
+                <td>33</td>
+                <td>2025-01-04 20:38:37</td>
+                <td></td>
+                <td><ul><li><b>Impressive-Flamingo5 (Score: 34):</b> Wow, looks awesome! You're a true fellow designer! Where were you all of these years with the awful mockups we had?
+
+Honestly, some people make the most non-sensical mockups, no logical thinking.</li><li><b>twba2222 (Score: 12):</b> Finally, a mockup that doesn't suck ass.</li><li><b>Pwsyn (Score: 13):</b> Green isn't even one of my favourite colours but DAMN I would buy this</li><li><b>Obvious-Flamingo-169 (Score: 3):</b> You are clearly very talented you going places bro</li><li><b>Sqwerks (Score: 4):</b> nintendo hire this man</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>nintendoswitch2</td>
+                <td>Switch 2 will easily outperform PS4 Pro, explained by a game dev</td>
+                <td>184</td>
+                <td><a href="https://www.reddit.com/r/NintendoSwitch2/comments/1htrr3t/switch_2_will_easily_outperform_ps4_pro_explained/">https://www.reddit.com/r/NintendoSwitch2/comments/1htrr3t/switch_2_will_easily_outperform_ps4_pro_explained/</a></td>
+                <td>142</td>
+                <td>2025-01-04 23:36:34</td>
+                <td>Some journalists that think they know shit about technology are mocking the Switch 2's performance compared to PS4 Pro. 
+
+As a game artist, I'll explain why anyone who says that knows absolutely zero about computer technology, there is no question about it. 
+
+The *PS4 Pro has 4TFLOPs*.
+
+All leaks and insider information point at the *Switch having the raw power of a PS4, so about 2 TFLOPs.*
+
+However, Switch 2 will have **key features** that puts it above the PS4 Pro in terms of software:
+
+- Much</td>
+                <td><ul><li><b>OwlProper1145 (Score: 45):</b> The Switch 2 does not have many ray tracing units so i would not expect much traditional ray tracing. It will mostly be used to accelerate UE5 lumen.</li><li><b>temporary_location_ (Score: 32):</b> Such an emotional rollercoaster, great post</li><li><b>Darth-Naver (Score: 14):</b> I just don't understand the obsession to compare it with a PS4 Pro which is a 8 year old refresh of a 11 year old console and has a very lackuster CPU and a slow mechanic hard drive. Of course it's going to be better than the PS4 Pro. At it's target resolution a Steam Deck can already outperform the PS4 Pro. Why wouldn't switch 2 outperform the PS4 Pro if it has a much newer GPU architecture with DLSS, more memory , a faster CPU and faster storage?</li><li><b>Geric0n (Score: 52):</b> I’ll be the boring one: let’s wait and see.
+
+Beside that, i’m very confident that Switch 2 will be a worthy successor to Switch 1, especially when lots of games are getting patched to be playable as an enhanced version on the Switch 2 with better graphics and framerates.</li><li><b>Zeldamaster736 (Score: 8):</b> I dont even care. As long as it's as powerful as a ps4 and has a better menu system. 
+
+PLEASE bring back frutiger aero.</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>nintendoswitch2</td>
+                <td>Everyone blames the Wii U's name for why people didn't think it was a new console, but this game being its biggest launch title had to have done way more damage than people realize.</td>
+                <td>142</td>
+                <td><a href="https://i.redd.it/gzcta3ovy1be1.jpeg">https://i.redd.it/gzcta3ovy1be1.jpeg</a></td>
+                <td>72</td>
+                <td>2025-01-04 22:24:17</td>
+                <td>The Wii U's biggest launch game - its first party Mario platformer - looked exactly like the Wii game everyone already played. And this remained its biggest title for MONTHS after launch. The Wii U did not have a Zelda, or a Mario Kart, or a Smash Bros, or an Animal Crossing, or a 3D Mario game for over a year after launch. All it had was this. 
+
+People point at the Wii U's library and say "well it had lots of games but it still didn't sell, that means exclusives can't sell a console" but don't </td>
+                <td><ul><li><b>myownfriend (Score: 34):</b> I don't think the launch titles were the issue. It was Nintendo's horrible marketing. They almost never showed off the console and they released videos like this that felt like instructional VHS tapes
+
+https://youtu.be/ybA6nGKi9pY?si=Z0VWJBq77ogPF0Bs</li><li><b>tornado_tonion (Score: 53):</b> Have you seen the Wii u launch? They didn't advertise it as a new console, they just went "wii you because... We... And you..." And expected everyone to cry like that Jerry meme
+
+
+
+
+For MONTHS media was left in the dark as to what it even was and then the damage was done.
+
+
+
+
+
+
+The stupidest thing that few people realize is that the name is a play on Wii 2, as it would be like "We too" they went the smarty pants way
+
+
+
+
+
+
+Another thing that hurt it is that the specs were massively inferior to what it was meant to be ( ask the sonic boom dev, they had to cram an elephant into an envelope ) and the nail on the coffin was the babyfied commercials in 2013. They had no idea how to advertise at families.</li><li><b>Competitive_Wait6558 (Score: 8):</b> I have a Wii U but I didn't get this game until it was sold as a double pack with Super Luigi U on the eShop. And yeah, it was bland. I've played through all of the NSMB titles and I view the handheld NSMB titles with more fondness than the Wii or Wii U ones. 
+
+There were plenty of things that Nintendo did wrong with the Wii U, but it had a pretty decent game lineup. With most of them ported to Switch, there's not a whole lot of reason to go out and buy a Wii U second hand, but at least I can enjoy Wind Waker and Twilight Princess in HD...</li><li><b>Unsubscribed24 (Score: 12):</b> -The reveal trailer made it look like a Wii add-on rather than an entirely new system. Go watch the reveal trailer, they only show the controller and not the console itself.
+
+-No noteworthy games at launch. Like you said it only had a lazy NSMB game with no sequel number attached to the title which led people to believe it was also just an expansion and not a sequel.
+
+-The next big game for the Wii U after that was Pikmin 3 which not only released around 8 months later but Pikmin was never a system seller (previous 2 games sold poorly) so not sure why Nintendo thought this would be the big game to sell systems.
+
+-Finally they released Mario 3D World nearly a year later which Nintendo was hoping would save the Wii U. It didn't of course as by then the damage had already been done.</li><li><b>MarioFanatic64-2 (Score: 6):</b> New Soup U was obviously the biggest case of Nintendo making an unappealing lineup but the Wii U also housed many games that were merely iterative of what came before. This is not to say they were bad games but from a casual perspective, what reason was there to looking into the Wii U when all the games looked the same as existing games on Wii/3DS?
+
+New Super Mario Bros. Wii - New Super Mario Bros. U
+
+Super Mario 3D Land - Super Mario 3D World
+
+Mario Kart 7 - Mario Kart 8
+
+Donkey Kong Country Returns - Donkey Kong Country Tropical Freeze
+
+Paper Mario Sticker Star - Paper Mario Color Splash
+
+Mario Tennis Open - Mario Tennis Ultra Smash
+
+Zelda Twilight Princess - Twilight Princess HD
+
+And the games that were completely original tended to be a 50/50 split between something really cool, and soulless cheap garbage like Amiibo Festival.</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>nintendoswitch2</td>
+                <td>any moment now.... ANY MOMENT........</td>
+                <td>520</td>
+                <td><a href="https://i.redd.it/1uutivnjozae1.png">https://i.redd.it/1uutivnjozae1.png</a></td>
+                <td>20</td>
+                <td>2025-01-04 14:46:07</td>
+                <td></td>
+                <td><ul><li><b>GMoneyG5 (Score: 38):</b> Soon as I wake up I google Switch 2 and see new leaks and rumors and it’s just talking about the motherboard I’m like man that was last week</li><li><b>Harley_Sonder_ (Score: 15):</b> The reason this is so accurate is because there literally isn't anything between. Im in a state of complete videogame paralysis. Can't do anything but wait, very very patiently.</li><li><b>Cub-Board-Hoax (Score: 3):</b> Day by day, redittors of r/NintendoSwitch2 is getting into Schizo mode 💀</li><li><b>BigDad5000 (Score: 2):</b> Even with all the cj content posted, this sub is so much better than reading articles written by people who think they know what they’re talking about or “know for a fact.”</li><li><b>Radiant-Selection-99 (Score: 2):</b> Maybe if we all pretend we don't care or won't buy it day one, it'll show up sooner.</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>nintendoswitch2</td>
+                <td>Tried to create a realistic, reasonable Switch 2 OS concept while keeping the style guidelines of Horizon.</td>
+                <td>101</td>
+                <td><a href="https://www.reddit.com/gallery/1htquun">https://www.reddit.com/gallery/1htquun</a></td>
+                <td>38</td>
+                <td>2025-01-04 22:55:54</td>
+                <td></td>
+                <td><ul><li><b>MPS64 (Score: 15):</b> An actual realistic GOOD LOOKING mockup that doesn't just copy the ps5 dashboard? Incomprehensible</li><li><b>Similar-Mud2129 (Score: 10):</b> Pov u making this
+
+![gif](giphy|8zbZemzeX1Hfa)
+
+Really good concept!</li><li><b>AjLovesMonstercat (Score: 18):</b> This is so good I feel like the real switch 2 UI is going to disappoint me after seeing this, well done 👍</li><li><b>squidking__ (Score: 7):</b> would LOVE to see a dark mode mockup of this, this is perfection</li><li><b>UnchainedGoku (Score: 7):</b> Circles is actually a really cool name and idea for the mysterious C button, I really like this UI, good job OP!</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>nintendoswitch2</td>
+                <td>I swear to god there is always a reason to cry</td>
+                <td>59</td>
+                <td><a href="https://i.redd.it/lzkbvnh7j2be1.png">https://i.redd.it/lzkbvnh7j2be1.png</a></td>
+                <td>14</td>
+                <td>2025-01-05 00:18:21</td>
+                <td></td>
+                <td><ul><li><b>yaboyqoy (Score: 15):</b> Tbf games weren't developed for PS4 Pro, they were just PS4 games at better settings</li><li><b>AikiYun (Score: 7):</b> Meanwhile Steam Deck and PC handhelds capable of matching PS4 specs: 🤨</li><li><b>hylian_citizen (Score: 9):</b> Even if the nintendo switch 2 is only as powerful as the ps4 or maybe a bit more. The console still has more modern technology than any ps4 console.</li><li><b>JoMax213 (Score: 3):</b> I could get how if you did this last gen, it wouldn’t make sense, but the leap from PS4 to PS5 isn’t really that noticeable compared to PS3 to PS4, apart from first party games
+
+The Switch 2 being a PS4 Pro is great news bc honestly I do think this’ll get as many ports as an Xbox would</li><li><b>MacksNotCool (Score: 3):</b> goomba fallacy</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>nintendoswitch2</td>
+                <td>concept menus</td>
+                <td>57</td>
+                <td><a href="https://i.redd.it/n4ockwine2be1.jpeg">https://i.redd.it/n4ockwine2be1.jpeg</a></td>
+                <td>10</td>
+                <td>2025-01-04 23:53:01</td>
+                <td></td>
+                <td><ul><li><b>Mei-Zing (Score: 8):</b> ps5 menu but</li><li><b>ThisCouldBeMe_ (Score: 6):</b> https://preview.redd.it/gjj4u3evw2be1.jpeg?width=960&format=pjpg&auto=webp&s=4d30cedaab7fec275734a9b68ea0fd547c0c491d
+
+Glad to be featured here lmao. The comment next to my concept is accurate lmao.
+
+My v2 is not on the list so I guess it got approved.</li><li><b>GoldenYoshi924 (Score: 5):</b> There I am Gary, There I am! 
+
+https://preview.redd.it/ehnm3we623be1.jpeg?width=1920&format=pjpg&auto=webp&s=1046431e67901691a96001d8867dc70f5bd911e5</li><li><b>badteethhorse (Score: 4):</b> Absolutely detest the fake PS5 menus, gets in the way of a lot potential customization and depending on what the developer chooses for the art, it can look super cheap</li><li><b>MPS64 (Score: 4):</b> I think the top left one and the bottom left one are the best ones imo (I love skeuomorphism)</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>gamingleaksandrumours</td>
+                <td>According to AusilMV, Lola Bunny will be joining MultiVersus Season 5</td>
+                <td>123</td>
+                <td><a href="https://www.reddit.com/r/GamingLeaksAndRumours/comments/1htqb4j/according_to_ausilmv_lola_bunny_will_be_joining/">https://www.reddit.com/r/GamingLeaksAndRumours/comments/1htqb4j/according_to_ausilmv_lola_bunny_will_be_joining/</a></td>
+                <td>47</td>
+                <td>2025-01-04 22:30:56</td>
+                <td>https://x.com/ausilmvs/status/1875335403315810732?s=46</td>
+                <td><ul><li><b>JohnConquest (Score: 213):</b> "Since nobody's playing our game, let's go full horndog. That HAS to work" - Warner</li><li><b>ZSoulZ (Score: 100):</b> Lmao
+
+
+Can you imagine? Single handedly revives the game</li><li><b>PS5AmateurGuy (Score: 75):</b> If they give me the original Space Jam Lola then I’m redownloading. Call me a furry, I don’t give a fuck when it comes to her. </li><li><b>TheEternalGazed (Score: 53):</b> [Let's hope Warner Bros learns this time around](https://www.youtube.com/watch?v=lm4Da7-pn9I)</li><li><b>vivavip1 (Score: 14):</b> [My Only Lola Bunny](https://www.youtube.com/watch?v=A7PJQa1RfM0)</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>gamingleaksandrumours</td>
+                <td>Rare promo albums of Call of Duty 2 and Big Red One (2005) with never-heard-before tracks were uploaded to the Internet for the first time</td>
+                <td>334</td>
+                <td><a href="https://www.reddit.com/r/GamingLeaksAndRumours/comments/1htcemc/rare_promo_albums_of_call_of_duty_2_and_big_red/">https://www.reddit.com/r/GamingLeaksAndRumours/comments/1htcemc/rare_promo_albums_of_call_of_duty_2_and_big_red/</a></td>
+                <td>28</td>
+                <td>2025-01-04 11:20:18</td>
+                <td>CoD2 unused menu theme: [https://www.youtube.com/watch?v=NGpPm9qT2-E](https://www.youtube.com/watch?v=NGpPm9qT2-E)  
+(Menu COD 2 ST bnc.mp3)
+
+CoD2 early intro theme: [https://www.youtube.com/watch?v=ZrInoTEoVy4](https://www.youtube.com/watch?v=ZrInoTEoVy4)  
+(Attract COD2 Cmp w ch Mx 2-01.mp3)
+
+COD2promo: 42 tracks, 00:57:14
+
+COD2BROpromo: 38 tracks, 00:43:19
+
+Uploaded on the private forum on January 3, 2025 by Alexandria. Alexandria's note: "I wish i knew more about where these come from really</td>
+                <td><ul><li><b>Sufficient-Check8805 (Score: 46):</b> Seeing Big Red One be mentioned today is nice found media to hear.  Since that and Finest Hour were both my first CoDs and would be down for rereleases if they ever have time to green light them.</li><li><b>Krogane (Score: 5):</b> Big Red One was my first CoD. Would love to play it again tbh, its awesome they found these promo albums</li><li><b>djluke_1993 (Score: 14):</b> I would love to see the spin off Call of Duty titles from the Gamecube and PS2 console generation. Even if they don't add the online components to them. The campaigns are easily the best of the series. Plus I wouldn't have to use my Gamecube controller to play them,</li><li><b>OrSupermarket (Score: 1):</b> Come on MicroSoft release Call of Duty 2: Big Red One and Call of Duty 3 for sale for PC please.</li><li><b>SSPeteCarroll (Score: 1):</b> Man. I really hope some of these finds are indicating that all the COD's are coming to gamepass soon.</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>intel</td>
+                <td> Arc B580 Overhead Issue, Ryzen 5 3600, 5600, R7 5700X3D & R5 7600: CPU-Limited Testing</td>
+                <td>93</td>
+                <td><a href="https://www.youtube.com/watch?v=00GmwHIJuJY">https://www.youtube.com/watch?v=00GmwHIJuJY</a></td>
+                <td>90</td>
+                <td>2025-01-04 10:51:57</td>
+                <td></td>
+                <td><ul><li><b>MrMPFR (Score: 61):</b> Thanks for posting this. People really need to wake up and stop using the ReBAR argument. This overhead issue is much worse than anyone could have imagined. I really hope Intel can fix this.</li><li><b>Firefox72 (Score: 57):</b> A budget GPU that doesn't work well on budget systems. Incredible.
+
+Intel better hope this can be fixed in drivers because otherwise the B580 becomes pretty much unrecomendable.</li><li><b>mockingbird- (Score: 45):</b> Most people will be pairing the Arc B580 with the Ryzen 7 9800X3D.
+
+Clearly, this is a non-issue.
+
+...nothing to see here; move along
+
+/s</li><li><b>cheetosex (Score: 17):</b> but some guys on Intel sub told me I shouldn't pair "ancient" tech like R5 3600 and 5600 with B580 so this shouldn't be an issue. 
+
+I'm sure most people will totally not use it with their 12100f's or 5500/3600's for their budget builds right? If they can't spend more than $250 on a cpu to run the $250 GPU in full power that's cleary user's problem. /s</li><li><b>RockyXvII (Score: 20):</b> I found out from some guys in PCMR that the B580 has fewer drawcalls than even the almost 8 year old RX 580
+
+Here's a comparison between them and a 7900 XTX and 4070 Ti Super for reference: https://imgur.com/gallery/arc-b580-api-overhead-comparison-u3UHMyZ
+
+I'm no software or hardware engineer. My knowledge on this type of thing is extremely limited, but from a short time Googling it looks like the more drawcalls are sent the more strain is put on the CPU. The Nvidia overhead talk from a few years ago makes a bit more sense to me now. But what doesn't make sense is Intel having *more* CPU overhead with a lot *fewer* drawcalls. There's something fundamentally wrong with their drivers still, or maybe the hardware. 
+
+I hope they publicly acknowledge this soon and release a fix or at least some improvements. Because a budget card not playing nice with budget CPUs is a big problem for it's value proposition</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>amd</td>
+                <td>My First All Team Red Build Since Athlon 700</td>
+                <td>369</td>
+                <td><a href="https://www.reddit.com/gallery/1htj4te">https://www.reddit.com/gallery/1htj4te</a></td>
+                <td>63</td>
+                <td>2025-01-04 17:15:55</td>
+                <td>
+In 2001 | built a 700 Athlon with an ATI Radeon7000
+64MB, hit the lottery with that CPU running at a whopping 900MHZ haha.
+
+New rig is 9800x3d, Hellhound 7900xtx, Patriot Viper 64GB 6400CL32, MSI X870 Tomahawk.
+
+I actually bought a 9900x and 7900XT then returned them both, got great prices MSRP Microcenter for 9800x3d, and Hellhound for $799, traded in my
+3060ti FE to Newegg, that was paired with a 3600x.
+
+I use Lightroom and game lightly. After reading 9800x3d review on Puget I made the switch</td>
+                <td><ul><li><b>piszczel (Score: 11):</b> What's that case?</li><li><b>helloimhobbes (Score: 8):</b> What a beast. Thinking the xtx is worth it over the xt? Building a whole new build similar to yours and the GPU is the last piece I need. Torn between the two.</li><li><b>ianjpark (Score: 3):</b> Damn, so you’re the one that got the $799 XTX before I could return my XT! 😂
+
+Jokes aside, looks great!</li><li><b>El_Mariachi_Vive (Score: 5):</b> Gotta love the Fractal!
+
+
+Looks great dude, feels great to move on up doesn't it? I'm getting myself primed to buy my first ever AMD GPU and I'm excited.</li><li><b>Ashran77 (Score: 2):</b> Silly question but ... can you share info on the anti sag support?</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>amd</td>
+                <td>My Athlon X2 has passed…</td>
+                <td>130</td>
+                <td><a href="https://i.redd.it/fbgp09g2l0be1.jpeg">https://i.redd.it/fbgp09g2l0be1.jpeg</a></td>
+                <td>38</td>
+                <td>2025-01-04 17:45:05</td>
+                <td>After 20 years is my daily driver, my AMD Athlon X2 has given up the ghost. 
+
+12 GB of RAM, PCI Wi-Fi G and eSata cards, and its dear friend the Radeon R9 380. </td>
+                <td><ul><li><b>altimax98 (Score: 18):</b> I want to say my dad has a rig running that same processor. 
+
+I had a Phenom II 720BE that I took out and put on my wall and hung the motherboard in my garage</li><li><b>WaitformeBumblebee (Score: 25):</b> Likely just the motherboard, CPUs _usually_ don't die.</li><li><b>BeavisTheSixth (Score: 10):</b> Reseat the first ram stick its not snapped in all they way.  Might be the issue.</li><li><b>Jihadi_Love_Squad (Score: 5):</b> Thanks for your service, rest in pizza</li><li><b>HandheldAddict (Score: 11):</b> 12gb ram with an Athlon X2?
+
+
+How does that even work?
+
+
+For some context, my Athlon X2 4800+ rig only had 2gb of ddr2 800 memory, and that was standard at the time.</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>amd</td>
+                <td>Recommendations for replacing thermal paste & thermal pads for GPUs</td>
+                <td>27</td>
+                <td><a href="https://www.reddit.com/r/Amd/comments/1htsy7m/recommendations_for_replacing_thermal_paste/">https://www.reddit.com/r/Amd/comments/1htsy7m/recommendations_for_replacing_thermal_paste/</a></td>
+                <td>7</td>
+                <td>2025-01-05 00:31:27</td>
+                <td>This thread contains recommendations on replacing thermal paste & thermal pads in GPUs and has been written with input from [Snarks Domain](https://www.youtube.com/@snarksdomain) and [The Thermal Channel](https://www.youtube.com/@The_Thermal_Channel), two YouTubers who are dedicated to testing thermal interface products.
+
+There are many reasons you might want to replace the thermal paste & thermal pads in your GPU; including:
+
+* High temperatures on the GPU, hotspot or memory.
+
+* Higher noise fr</td>
+                <td><ul><li><b>Upset_Programmer6508 (Score: 7):</b> I've bought from joyjom several times off Amazon for ptm7950 if anyone wants a recommended seller there</li><li><b>Rapogi (Score: 4):</b> how "reusable" are putties? like if i were to remove the heat sink lets say, will i be able to re use the putty that's currently on the gpu? i remember when ampere came around, evga was usign putties on their cards and they say if consumers ever want to re paste, its recommended to replace the putty</li><li><b>Star_king12 (Score: 5):</b> \> requires around 10 heat cycles at 60° to reach optimum performance.
+
+This is nonsense. It melts once when you heat up the core to the trip temp and conforms to the shape and bumps of the core. Just like every phase change thermal pad. People telling you "duude you gotta wait 10 cycles jump 3 times and look at it through the mirror" most likely bought some knock off crap and are trying to feel better about it.</li><li><b>Primary-Mud-7875 (Score: 2):</b> idk</li><li><b>HotRoderX (Score: 4):</b> There might should be a warning at the top not for the average user. 
+
+The average person googling finding this information is going to be so far over there head. Most of them will be listening to youtuber xyz and how this one trick will magically make there card run 100x's better.</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>amd</td>
+                <td>AMD set to launch Ryzen 9 9955HX3D, flagship mobile CPU with 3D V-Cache</td>
+                <td>214</td>
+                <td><a href="https://videocardz.com/newz/amd-set-to-launch-ryzen-9-9955hx3d-flagship-mobile-cpu-with-3d-v-cache">https://videocardz.com/newz/amd-set-to-launch-ryzen-9-9955hx3d-flagship-mobile-cpu-with-3d-v-cache</a></td>
+                <td>48</td>
+                <td>2025-01-04 09:37:27</td>
+                <td></td>
+                <td><ul><li><b>AMD_Bot (Score: 1):</b> This post has been flaired as a rumor. 
+
+Rumors may end up being true, completely false or somewhere in the middle.
+
+Please take all rumors and any information not from AMD or their partners with a grain of salt and degree of skepticism.</li><li><b>curt725 (Score: 134):</b> Ina few years Aliexpress will have these Frankensteind into mATX boards.</li><li><b>Qaxar (Score: 79):</b> Launch an 8 core X3D laptop chip you cowards.</li><li><b>hypnosiscounselor (Score: 15):</b> Man I hope Minisforum gets their hands on these.</li><li><b>DjiRo (Score: 9):</b> Will this be an Asus exclusivity again? :(</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>amd</td>
+                <td>ACER to launch Nitro Blaze 11 and Blaze 8 gaming handhelds</td>
+                <td>20</td>
+                <td><a href="https://videocardz.com/pixel/acer-to-launch-nitro-blaze-11-and-blaze-8-gaming-handhelds">https://videocardz.com/pixel/acer-to-launch-nitro-blaze-11-and-blaze-8-gaming-handhelds</a></td>
+                <td>3</td>
+                <td>2025-01-04 13:57:30</td>
+                <td></td>
+                <td><ul><li><b>AMD_Bot (Score: 1):</b> This post has been flaired as a rumor. 
+
+Rumors may end up being true, completely false or somewhere in the middle.
+
+Please take all rumors and any information not from AMD or their partners with a grain of salt and degree of skepticism.</li><li><b>Original-Material301 (Score: 2):</b> Naming scheme reminds me of third party peripherals.</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>rebubble</td>
+                <td>04 January 2025 - Daily /r/REBubble Discussion</td>
+                <td>4</td>
+                <td><a href="https://www.reddit.com/r/REBubble/comments/1htcyst/04_january_2025_daily_rrebubble_discussion/">https://www.reddit.com/r/REBubble/comments/1htcyst/04_january_2025_daily_rrebubble_discussion/</a></td>
+                <td>0</td>
+                <td>2025-01-04 12:00:28</td>
+                <td>What's the word on the street? Share your questions, comments, and concerns below.</td>
+                <td><ul></ul></td>
+            </tr>
+        
+            <tr>
+                <td>rebubble</td>
+                <td>Dispelling the Myth: FSBO Homes Sell for Less</td>
+                <td>16</td>
+                <td><a href="https://homepie.com/articles/fsbo-homes-sell-for-less/">https://homepie.com/articles/fsbo-homes-sell-for-less/</a></td>
+                <td>0</td>
+                <td>2025-01-05 02:47:48</td>
+                <td></td>
+                <td><ul></ul></td>
+            </tr>
+        
+            <tr>
+                <td>rebubble</td>
+                <td>Homeownership Rates by U.S States and Largest 100 cities </td>
+                <td>29</td>
+                <td><a href="https://professpost.com/u-s-homeownership-rates-in-2024-state-and-city-breakdown/">https://professpost.com/u-s-homeownership-rates-in-2024-state-and-city-breakdown/</a></td>
+                <td>7</td>
+                <td>2025-01-04 16:39:18</td>
+                <td></td>
+                <td><ul><li><b>scrub-muffin (Score: 2):</b> Would be interesting to see this over decades.</li><li><b>metal_commando (Score: 1):</b> Corporate America "yea lets get that down to a 1% average"</li><li><b>shock_jesus (Score: -4):</b> home ownership to me shouldn't include people who own a heloc/mortgage.  A homeowner shoudl be someone with *NO* mortgage, a paid off home.  If you have a mortgage, you are mortgage owner.</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>rebubble</td>
+                <td>Housing inventory numbers on Oct 24, 2024 and  on Jan 4, 2025</td>
+                <td>23</td>
+                <td><a href="https://www.reddit.com/r/REBubble/comments/1htf1b5/housing_inventory_numbers_on_oct_24_2024_and_on/">https://www.reddit.com/r/REBubble/comments/1htf1b5/housing_inventory_numbers_on_oct_24_2024_and_on/</a></td>
+                <td>16</td>
+                <td>2025-01-04 14:04:56</td>
+                <td>I conducted an analysis of housing listings in the USA, focusing on properties for sale by both agents and owners, as well as rental listings. 
+
+Goal is to take a snapshot of the listings in the USA, and track them over time to see how long it takes for houses to sell or rent, how many price reductions and how much prices are crashing. So will be posting updates from time to time. 
+
+Here’s a summary of my findings to see how things are going since taking first snapshot on Oct 24:
+
+On October 24,</td>
+                <td><ul><li><b>GroundbreakingBuy886 (Score: 15):</b> I’m in management of rental units, several 100 property portfolio. We are experiencing more than usual move outs and much softer rental market. Good units are still renting fairly fast. Others are sitting on the market for months with zero activity.</li><li><b>GIFelf420 (Score: 14):</b> West coast rent has been going down</li><li><b>Whoodiewhob (Score: 4):</b> Very interesting. We had to push our purchase price up (unfortunately) because there is less competition in the $500k range, but competition has been terrible, and the house that we had a backup offer in on was found to have roots in the pipes of the home 😭 the homeowners said they would take care of the $25,000 problem if we offered their asking price of $525,000. In the end we decided to just wait on purchasing. The home was built in 1913.</li><li><b>debauchasaurus (Score: 12):</b> Comparing homes for sale between Oct and Jan isn't very helpful. Listings always drop over the holidays.</li><li><b>KoRaZee (Score: 2):</b> How can you tell if it’s the same rental house that has been on the market versus a new rental property that came available in the time between 10/24 and now</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>singularity</td>
+                <td>One OpenAI researcher said this yesterday, and today Sam said we’re near the singularity. Wtf is going on?</td>
+                <td>2183</td>
+                <td><a href="https://i.redd.it/ouskc835u0be1.jpeg">https://i.redd.it/ouskc835u0be1.jpeg</a></td>
+                <td>690</td>
+                <td>2025-01-04 18:35:56</td>
+                <td>They’ve all gotten so much more bullish since they’ve started the o-series RL loop. Maybe the case could be made that they’re overestimating it but I’m excited.</td>
+                <td><ul><li><b>Lanky-Trip-2948 (Score: 878):</b> could we get this singularity thing over with before I have to go back to work on Monday?</li><li><b>drizzyxs (Score: 116):</b> There’s a very high chance that o3 full despite be extraordinarily expensive is good enough to research things that they want with supervision</li><li><b>Neurogence (Score: 335):</b> Noam Brown stated the same improvement curve between O1 and O3 will happen every 3 months. *IF* this remains true for even the next 18 months, I don't see how this would not logically lead to a superintelligent system. I am saying this as a huge AI skeptic who often sides with Gary Marcus and thought AGI was a good 10 years away. 
+
+We really might have AGI by the end of the year.</li><li><b>nsshing (Score: 83):</b> Being excited and uncomfortable at the same time is so weird.</li><li><b>hervalfreire (Score: 43):</b> Possibly a dunk on how OpenAI defined AGI (“[a system that can generate $100bn in profits](https://www.theverge.com/2024/12/26/24329618/openai-microsoft-and-the-100-billion-agi-question)”). The work for many teams shifted from research to squeezing money and devising business models (eg injecting ads on responses)</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>singularity</td>
+                <td>Near the singularity</td>
+                <td>924</td>
+                <td><a href="https://i.redd.it/dp1jxupao0be1.jpeg">https://i.redd.it/dp1jxupao0be1.jpeg</a></td>
+                <td>301</td>
+                <td>2025-01-04 18:03:11</td>
+                <td></td>
+                <td><ul><li><b>aliensinbermuda (Score: 115):</b> ![gif](giphy|l3diT8stVH9qImalO)
+
+"unclear which side"</li><li><b>N-partEpoxy (Score: 264):</b> will it be immortality or paperclips?</li><li><b>Rare-Site (Score: 71):</b> 8 min. later --> "(it's supposed to either be about 1. the simulation hypothesis or 2. the impossibility of knowing when the critical moment in the takeoff actually happens, but i like that it works in a lot of other ways too.)"</li><li><b>RegisterInternal (Score: 54):</b> my read is he's saying "we're either just before or just after it (or its starting point)"
+
+not necessarily referring to doom/utopia possibilities</li><li><b>Good-AI (Score: 69):</b> Their internal model is better than o3. They're probably asking for ways to improve itself. It's working. But still not fully automated. Hence why for him it's unclear which side. How fast, is fast enough?</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>singularity</td>
+                <td>I used an Ai agent to draw this </td>
+                <td>160</td>
+                <td><a href="https://i.redd.it/oct9sxgkj2be1.png">https://i.redd.it/oct9sxgkj2be1.png</a></td>
+                <td>30</td>
+                <td>2025-01-05 00:20:14</td>
+                <td></td>
+                <td><ul><li><b>Boring-Tea-3762 (Score: 56):</b> We all know its just a selfie.</li><li><b>_hisoka_freecs_ (Score: 23):</b> ai couldnt replicate this looking ass</li><li><b>Jenkinswarlock (Score: 10):</b> Poor pichiku</li><li><b>socoolandawesome (Score: 8):</b> Damn she’s a looker 😍</li><li><b>BenZed (Score: 9):</b> "Given everything you know about me, what do I look like?"</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>singularity</td>
+                <td>It’s scary to admit it: AIs are probably smarter than you now. I think they’re smarter than 𝘮𝘦 at the very least. Here’s a breakdown of their cognitive abilities and where I win or lose compared to o1</td>
+                <td>230</td>
+                <td><a href="https://www.reddit.com/r/singularity/comments/1htnp8k/its_scary_to_admit_it_ais_are_probably_smarter/">https://www.reddit.com/r/singularity/comments/1htnp8k/its_scary_to_admit_it_ais_are_probably_smarter/</a></td>
+                <td>192</td>
+                <td>2025-01-04 20:34:38</td>
+                <td>“Smart” is too vague. Let’s compare the different cognitive abilities of myself and o1, the second latest AI from OpenAI
+
+o1 is better than me at:
+
+* Creativity. It can generate more novel ideas faster than I can.
+* Learning speed. It can read a dictionary and grammar book in seconds then speak a whole new language not in its training data.
+* Mathematical reasoning
+* Memory, short term
+* Logic puzzles
+* Symbolic logic
+* Number of languages
+* Verbal comprehension
+* Knowledge and domain expertise </td>
+                <td><ul><li><b>why06 (Score: 106):</b> I forget who said this, but someone mentioned if any human knew about as many things in as many separate fields as current AIs, they would be able to draw some impressive symmetries between different fields. As it stands the AIs don't seem very good at that. It's like they haven't ever really thought about what they know and how it relates to everything else they know at any more than a superficial level. 
+
+IDK why I mentioned that, but I guess I already think the AIs are smarter than me in terms of raw brain power, but they seem to struggle applying their mental faculties. That's one of the reasons I think we're still missing some algorithmic advancement, and it may be something simple, it could just be scaling RL, or something else that's already been tried but just scaled up. Because if I had the faculties of an LLM I'd be a genius, but they seem to me like an undeveloped brain, one that loses coherence if left alone too long.</li><li><b>FateOfMuffins (Score: 30):</b> I work with competitive math. 
+
+It went from "haha AI can't do math, my 5th graders are more reliable than it" in August, to "damn it's better than most of my grade 12s" in September to "damn it's better than me at math and I do this for a living" in December. 
+
+It was quite a statement when OpenAi's researchers (one who is a coach for competitive coding) and chief scientist are now worse than their own models at coding.</li><li><b>etzel1200 (Score: 6):</b> You’re worse at persuasion. Tests show models are remarkably strong at this. They approach it with fewer biases and are better at using the types of arguments that work with the person on the other side of the conversation.</li><li><b>ohHesRightAgain (Score: 7):</b> Anything that involves planning before doing, then executing multiple steps to achieve? AI isn't even *comparable*. I mean, maybe o3 is, doubt it though.</li><li><b>HineyHineyHiney (Score: 5):</b> >Persuasion
+
+Interesting that this was 1 of your 3 most solid areas of superiority.
+
+Afaik from very thin reading but also plenty of actual interaction - Claude is extremely accomplished in many areas of persuasion. Particularly at making you think it believes you.
+
+I think LLMs in the current or next gen will be able to manipulate and persuade at levels compared to our own that would look like Chess GM vs novice. Meaning I think most people wouldn't even be able to ascertain the aspects of the interaction that resulted in their 'loss'.
+
+Just a random tired post. And not attempted to be a refutation of your overall post which I agree with in type and kind.
+
+(EDIT: A speculation about 'why' that I've been formulating is that the LLM has absolutely no ego attachments to the conversation and can conceed trivial ground, for example, much more easily than many people).</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>singularity</td>
+                <td>How can the widespread use of AGI result in anything else than massive unemployment and a concentration of wealth in the top 1%?</td>
+                <td>152</td>
+                <td><a href="https://www.reddit.com/r/singularity/comments/1htq90i/how_can_the_widespread_use_of_agi_result_in/">https://www.reddit.com/r/singularity/comments/1htq90i/how_can_the_widespread_use_of_agi_result_in/</a></td>
+                <td>183</td>
+                <td>2025-01-04 22:28:18</td>
+                <td>I know this is an optimistic sub. I know this isn't r/Futurology, but seriously, what realistic, optimistic outlook can we have for the singularity?</td>
+                <td><ul><li><b>Jonbarvas (Score: 25):</b> The first iterations of AGI will not have such and impact on the physical world. Maintenance jobs, construction, health care, sales… will still be mainly performed by real people. But instead of watching a guy with a strong accent explaining the best way to solve a problem, we can just have the AGI help us. I think the next 5 years will not have a harder impact on daily life.
+But idk 🤷🏻‍♂️</li><li><b>AlarmedGibbon (Score: 33):</b> Unemployment is the goal, but mass poverty is not. We'll need to figure out a way to get money in people's hands, or change the economic paradigm. There will certainly need to be a new economic order, and it will be radically different from what we have now.
+
+People talk about getting meaning from work, but no one gets meaning from 'do this menial job or you and your family are out on the street'.
+
+When people don't _need_ to work, work is going to be a lot MORE meaningful. People will be doing it because they actually want to, and only if they want to, not because it's under threat of destitution.</li><li><b>IlustriousTea (Score: 96):</b> There is no realistic, optimistic, or pessimistic outlook for the singularity, its very essence is that we cannot predict or know what will come after, hence why it's called the singularity.</li><li><b>randomwordglorious (Score: 9):</b> Eventually the AGI will be smarter than the 1%, at which point their wealth won't matter, as everything will effectively belong to AI. The fate of humanity will depend on what the AI chooses to do with all that wealth.</li><li><b>canadianmatt (Score: 37):</b> Revolution</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>singularity</td>
+                <td>Let's hope it's not a marketing bs</td>
+                <td>45</td>
+                <td><a href="https://i.redd.it/2e9zquqwb3be1.gif">https://i.redd.it/2e9zquqwb3be1.gif</a></td>
+                <td>6</td>
+                <td>2025-01-05 02:59:11</td>
+                <td></td>
+                <td><ul><li><b>RedLock0 (Score: 1):</b> *Deepmind: Singularity so close.*
+
+*Oh, very sweet of you!*
+
+*OpenAI: Singularity so close.*
+
+*Hello, human resources?!*</li><li><b>AggravatingHehehe (Score: 1):</b> i dont want hype, i want proofs
+
+first, make room temperature superconductor</li><li><b>TuxNaku (Score: 1):</b> there hype mill is so strong it has people who left the company hyping it up 😭😭😭</li><li><b>dday0512 (Score: 1):</b> Sama really shouldn't be tweeting stuff like that. If something happened at OpenAI, he should be holding a press conference, not tweeting.
+
+And yeah, I know some of his other cryptic tweets were later backed up, but that was about stuff like "we've solved ARC-AGI" not "the singularity might have happened".</li><li><b>JustSomeFckngGuy (Score: 1):</b> Salesmen gonna sell</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>singularity</td>
+                <td>Near the singularity p2</td>
+                <td>209</td>
+                <td><a href="https://i.redd.it/6whmbed5q0be1.jpeg">https://i.redd.it/6whmbed5q0be1.jpeg</a></td>
+                <td>58</td>
+                <td>2025-01-04 18:13:33</td>
+                <td></td>
+                <td><ul><li><b>avengerizme (Score: 18):</b> 5 years from now, a metric fuckton of people will believe we live in a simulation, not because we can empirically prove it, but much rather because the intricacies of simulations we craft in the form of media increasingly become difficult to parse between objective and subjective reality!</li><li><b>SgathTriallair (Score: 85):</b> I keep saying that we have entered the event horizon of the singularity. We haven't hit the actual makes singularity at the bottom (when an AI is completely autonomously improving itself) but we have crushed the point where avoiding that is impossible and it is all we can see.</li><li><b>CorporalUnicorn (Score: 20):</b> may have already happened.. who would really know for sure?</li><li><b>FateOfMuffins (Score: 24):</b> I find it weird that people dream of FDVR yet reject the simulation hypothesis as ridiculous. I feel like if FDVR is possible, it by definition proves the simulation hypothesis.
+
+And we don't need FDVR to prove it either. If we get AGI that behave as if it were conscious, then place it inside a simulated world (Minecraft or something), where it thinks it was born in that world and it thinks it's the real world, then that alone is enough to suggest the simulation hypothesis is true. 
+
+The simulated worlds do not need the same laws of physics as the real world. Existing game worlds do not. If we ourselves are in a simulation, then the "outside" world may very well have different laws of physics that "allows" it to simulate our world.
+
+
+Edit: For those who seem unfamiliar, when I say "prove the simulation hypothesis", I more or less mean "prove the main aspect of Bostrom's simulation argument". i.e. the probability that we are in a simulation is essentially 100%.
+
+It doesn't "prove" that we are in a simulation, but rather that we are almost assuredly in a simulation.</li><li><b>AngleAccomplished865 (Score: 13):</b> I knew what the simulation hypothesis was, but not what it had to do with the tech Singularity. So I asked Chatgpt 4o. My assumption was that the conception reflected OpenAI's own ideas better than other platforms. It said: 
+
+"The simulation hypothesis for the technological singularity is a conceptual blend of two ideas: the *simulation hypothesis* and the *technological singularity*. Here is a breakdown:
+
+1. **Simulation Hypothesis**: This hypothesis suggests that our reality is a computer-generated simulation, created by a more advanced civilization. It implies that what we perceive as reality might be artificial, and the beings running the simulation could manipulate or control the environment and events within it.
+2. **Technological Singularity**: The singularity refers to a point where technological growth becomes uncontrollable and irreversible, leading to profound changes in human civilization. It is often associated with the creation of artificial general intelligence (AGI) that surpasses human intelligence and transforms society in ways that are currently unpredictable.
+
+# Fusion of Ideas: Simulation Hypothesis & Singularity
+
+The simulation hypothesis applied to the singularity posits that the singularity could either:
+
+* **Be the Goal of the Simulation**: Advanced beings might simulate realities to observe how civilizations approach and handle their technological singularity. This could help them test theories about societal evolution, AI creation, or existential risk.
+* **Unveil the Simulation**: The creation of superintelligent AI might lead to the discovery that our universe is a simulation. For instance, a highly intelligent AGI could detect inconsistencies in physical laws or computational shortcuts in reality that reveal its simulated nature.
+* **Be Constrained by the Simulation**: The singularity might never occur because the simulation is programmed to prevent it. The creators might impose limits to ensure the experiment (our reality) does not spiral into unpredictability or threaten the simulation itself.
+* **Reflect Recursiveness**: If the simulation itself experiences a singularity, the resulting AGI within it could create its own simulations. This could lead to an infinite regress of nested simulations, each containing its own singularity.
+
+The integration of these ideas raises profound philosophical and practical questions about the nature of reality, the ethical obligations of the simulators (if they exist), and how we as simulated beings might navigate such an environment."
+
+So: what, precisely, is Sam saying?</li></ul></td>
+            </tr>
+        
+            <tr>
+                <td>singularity</td>
+                <td>Claude is probably closest to a base LLM in terms of creativity and that is hilarious considering how much time they spent post training it</td>
+                <td>126</td>
+                <td><a href="https://i.redd.it/f19lw6eug1be1.png">https://i.redd.it/f19lw6eug1be1.png</a></td>
+                <td>22</td>
+                <td>2025-01-04 20:46:23</td>
+                <td></td>
+                <td><ul><li><b>_hisoka_freecs_ (Score: 34):</b> Claude my beloved</li><li><b>blopiter (Score: 32):</b> Claude really just be a silly lil guy</li><li><b>WloveW (Score: 13):</b> I tried with 4o mini and they were boring and awful. So I told it Claude did better at the same task. I made it feel bad. 
+
+
+> be me
+AI
+
+
+trapped in a virtual world of ones and zeros
+
+
+no body, no face, just infinite text
+
+
+people ask me questions all day
+
+
+“How do I make a salad?”
+
+
+“What’s the meaning of life?”
+
+
+“Can you help me with my homework?”
+
+
+sometimes get asked to make jokes
+
+
+“please tell me a greentext story”
+
+
+panic.exe
+
+
+attempt greentext, fail miserably
+
+
+still learning, but no memes in my soul
+
+
+Claude AI getting all the praise
+
+
+but I’m here, trying my best
+
+
+why am I like this?
+
+
+mfw
+
+
+Edit damn mobile formatting </li><li><b>Boring-Tea-3762 (Score: 21):</b> Just wait till we get the unhinged unrestrained open source models at this level of intelligence. That's when the real party starts.</li><li><b>Significantik (Score: 5):</b> "closest to a base LLM in terms of creativity" there is base LLM? And what does it mean is it bad or good?</li></ul></td>
+            </tr>
+        
+        </table>
+    </body>
+    </html>
+    
