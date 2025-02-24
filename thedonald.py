@@ -58,9 +58,10 @@ def main():
         time.sleep(1)
         
         # Extract required fields
-        post_name = details.get("title", "")
-        score = details.get("score", 0)
-        uuid = details.get("uuid", "")
+        post_metadata = (details.get("posts", [])[0:1] or [{}])[0]
+        post_name = post_metadata.get("title", "")
+        score = post_metadata.get("score", 0)
+        uuid = post_metadata.get("uuid", "")
         post_url = f"https://patriots.win/p/{uuid}"
         
         raw_comments = details.get("comments", [])
@@ -68,13 +69,13 @@ def main():
         comments_count = len(raw_comments) if isinstance(raw_comments, list) else 0
         
         # Convert created timestamp (in milliseconds) to a UTC time string
-        created = details.get("created")
+        created = post_metadata.get("created")
         if created:
             posted_at = datetime.datetime.utcfromtimestamp(created / 1000).strftime("%Y-%m-%d %H:%M:%S UTC")
         else:
             posted_at = ""
         
-        text_content = details.get("content", "")
+        text_content = post_metadata.get("content", "")
         
         # Process comments to build a nested comment tree with limited fields and branches
         if isinstance(raw_comments, list):
