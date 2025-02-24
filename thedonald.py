@@ -17,8 +17,8 @@ def fetch_post_details(post_id):
     response = requests.get(url)
     return response.json()
 
-# Build a nested comment tree up to a maximum depth (4 levels) with limited fields and limited branches per level (max 4)
-def build_comment_tree(comments, max_depth=4):
+# Build a nested comment tree up to a maximum depth (4 levels) with limited fields and limited branches per level (max 2)
+def build_comment_tree(comments, max_depth=2):
     # Build mapping from parent id to list of child comments
     children = defaultdict(list)
     for c in comments:
@@ -33,17 +33,17 @@ def build_comment_tree(comments, max_depth=4):
     def build_tree(comment, depth):
         node = {
             "raw_content": comment.get("raw_content"),
-            "score": comment.get("score"),
-            "author": comment.get("author"),
-            "created": comment.get("created")
+            # "score": comment.get("score"),
+            "author": comment.get("author")
+            # "created": comment.get("created")
         }
         if depth < max_depth:
             # Limit each level to the top 4 replies by score
             node["replies"] = [build_tree(child, depth + 1) for child in children.get(comment["id"], [])[:4]]
         return node
     
-    # Get top-level comments (those with parent id 0) and limit to the first 10 comment chains
-    top_level = [c for c in comments if c.get("comment_parent_id") == 0][:10]
+    # Get top-level comments (those with parent id 0) and limit to the first 5 comment chains
+    top_level = [c for c in comments if c.get("comment_parent_id") == 0][:5]
     return [build_tree(c, 1) for c in top_level]
 
 def main():
